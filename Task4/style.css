@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.counter-container {
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#counter-display {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.button-container .btn {
+    margin: 0 10px;
+    width: 80px;
+    font-size: 1.5rem;
+}
