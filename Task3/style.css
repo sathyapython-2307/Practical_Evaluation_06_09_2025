@@ -1,8 +1,100 @@
+
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
 }
 
-.completed {
+
+.container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 480px;
+    margin: 60px auto 0 auto;
+}
+
+h1 {
+    font-weight: 700;
+    color: #4f46e5;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#task-input.form-control {
+    border: none;
+    border-radius: 0;
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    background: #f1f5f9;
+    transition: background 0.2s;
+}
+#task-input.form-control:focus {
+    background: #e0e7ff;
+    box-shadow: none;
+}
+
+#add-task-btn.btn {
+    background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 12px 12px 0;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+}
+#add-task-btn.btn:hover {
+    background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+#task-list.list-group {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.06);
+}
+
+.list-group-item {
+    background: #f9fafb;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.08rem;
+    padding: 0.85rem 1.2rem;
+    transition: background 0.2s;
+}
+.list-group-item:last-child {
+    border-bottom: none;
+}
+.list-group-item .delete-btn {
+    background: linear-gradient(90deg, #f87171 0%, #ef4444 100%);
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.08);
+}
+.list-group-item .delete-btn:hover {
+    background: linear-gradient(90deg, #ef4444 0%, #b91c1c 100%);
+    transform: scale(1.07);
+}
+
+.list-group-item span {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.list-group-item span.completed {
     text-decoration: line-through;
-    color: #6c757d;
+    color: #a5b4fc;
+    opacity: 0.7;
 }

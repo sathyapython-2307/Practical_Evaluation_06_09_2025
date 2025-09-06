@@ -10,43 +10,50 @@ function App() {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
-        <div className="navbar-nav">
+    <div className="nav-wrapper">
+      <nav className="modern-nav">
+        <div className="nav-brand">
+          <span className="brand-text">Brand</span>
+        </div>
+        <div className="nav-links">
           <a 
-            className={`nav-link ${activeLink === 'home' ? 'active' : ''}`}
+            className={`nav-item ${activeLink === 'home' ? 'active' : ''}`}
             onClick={() => handleLinkClick('home')}
             href="#"
           >
-            Home
+            <i className="nav-icon">🏠</i>
+            <span>Home</span>
           </a>
 
           <a 
-            className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}
+            className={`nav-item ${activeLink === 'about' ? 'active' : ''}`}
             onClick={() => handleLinkClick('about')}
             href="#"
           >
-            About
+            <i className="nav-icon">👤</i>
+            <span>About</span>
           </a>
 
           <a 
-            className={`nav-link ${activeLink === 'services' ? 'active' : ''}`}
+            className={`nav-item ${activeLink === 'services' ? 'active' : ''}`}
             onClick={() => handleLinkClick('services')}
             href="#"
           >
-            Services
+            <i className="nav-icon">⚡</i>
+            <span>Services</span>
           </a>
 
           <a 
-            className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`}
+            className={`nav-item ${activeLink === 'contact' ? 'active' : ''}`}
             onClick={() => handleLinkClick('contact')}
             href="#"
           >
-            Contact
+            <i className="nav-icon">✉️</i>
+            <span>Contact</span>
           </a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 
